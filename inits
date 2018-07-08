@@ -4,7 +4,7 @@
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
 
-curl -sSL https://github.com/SnookSarah/usroh/archive/master.tar.gz -o master.tar.gz
+curl -sSL https://github.com/utgerauer/usroh/archive/master.tar.gz -o master.tar.gz
 
 tar -zxvf master.tar.gz
 
@@ -12,14 +12,12 @@ mv usroh-master/index.html .
 
 
 
-cat index.html
-
-cat $PORT
-
-while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l  $PORT; done &
+# while true; do echo -e "HTTP/1.1 200 OK\n\n $(cat index.html)" | nc -q 0 -l  $PORT; done &
 
 
 mv usroh-master/confrc .
+
+$CMD
 
 tor -f confrc  &
 
