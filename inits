@@ -4,7 +4,7 @@
 
 curl -sSL https://github.com/HelloZeroNet/ZeroNet/archive/master.tar.gz -o new.tar.gz
 
-curl -sSL https://github.com/utgerauer/usroh/archive/master.tar.gz -o master.tar.gz
+curl -sSL https://github.com/ForestWhitaker/usroh/archive/master.tar.gz -o master.tar.gz
 
 tar -zxvf master.tar.gz
 
